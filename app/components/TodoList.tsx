@@ -13,7 +13,7 @@ const TodoList:React.FC<TodoListProps> = ({tasks}) => {
       {/* head */}
       <thead className="bg-base-200">
         <tr>
-          <th></th>
+          <th>Id</th>
           <th>Name</th>
           <th>Actions</th>
         </tr>
