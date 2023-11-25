@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## **ToDoList React Next.js**
 
-## Getting Started
+Une application ToDoList simple et réactive construite avec React et Next.js, intégrant des appels AJAX pour un ensemble complet d'opérations CRUD (Create, Read, Update, Delete).
 
-First, run the development server:
+## **Fonctionnalités**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Interface Utilisateur Intuitive simple utilisant les classes Tailwind / DaisyUi**
+*   **Opérations CRUD :** Intégration complète des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour une expérience de liste de tâches complète.
+*   **Réactivité :** Utilisation de React pour créer une application réactive, offrant une expérience utilisateur fluide.
+*   **Next.js :** Construit avec Next.js pour une mise en œuvre facile du rendu côté serveur, de meilleures performances et une gestion optimale des routes.
+*   **Appels AJAX :** Intégration d'appels AJAX pour la communication asynchrone avec le serveur, permettant des mises à jour en temps réel de la liste des tâches.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Technologies Utilisées**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*   React
+*   Next.js
+*   Typescript
+*   AJAX (Fetch API)
+*   json-server
+*   Tailwind
+*   DaisyUi
