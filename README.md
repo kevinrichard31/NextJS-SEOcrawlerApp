@@ -19,3 +19,10 @@ Une application ToDoList simple et réactive construite avec React et Next.js, i
 *   json-server
 *   Tailwind
 *   DaisyUi
+
+## **NODE JS VERSION REQUIRED 18.17.0**
+
+Quick Install
+*   1 ) npm install
+*   2 ) npm run json-server
+*   3 ) npm run dev

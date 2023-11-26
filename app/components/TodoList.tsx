@@ -1,28 +1,31 @@
+"use client"; // This is a client component 👈🏽
 import { ITasks } from "@/types/tasks";
 import React from "react";
 import { FaPlusCircle } from "react-icons/fa";
 import Task from "./Task";
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
+
 interface TodoListProps {
     tasks : ITasks[]
 }
 
 
 const TodoList:React.FC<TodoListProps> = ({tasks}) => {
-    return <div className="overflow-x-auto">
-    <table className="table">
-      {/* head */}
-      <thead className="bg-base-200">
-        <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {tasks.map(task => <Task key={task.id} task={task} />)}
-      </tbody>
-    </table>
-  </div>
+    return (
+    <Table>
+      <Thead className="bg-gray-100">
+        <Tr>
+          <Th className="p-2">Id</Th>
+          <Th className="p-2">Name</Th>
+          <Th className="p-2">Actions</Th>
+        </Tr>
+      </Thead>
+      <Tbody>
+      {tasks.map(task => <Task key={task.id} task={task} />)}
+      </Tbody>
+    </Table>
+  )
     
 }
 

@@ -5,6 +5,8 @@ import { FiEdit, FiTrash2 } from "react-icons/fi";
 import Modal from "./Modal";
 import { useRouter } from "next/navigation";
 import { deleteTodo, editTodo } from "@/api";
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
 interface TaskProps {
     task: ITasks
@@ -37,13 +39,14 @@ const Task: React.FC<TaskProps> = ({task}) => {
         router.refresh();
     }
 
-    return <tr key={task.id}>
-    <th>{task.id}</th>
-    <td>{task.text}</td>
-    <td className="flex gap-5">
-        <FiEdit size={20} className="text-blue-500" cursor="pointer" onClick={() => setOpenModalEdit(true)}/>
-        
-        <FiTrash2 size={20} className="text-red-500" cursor="pointer" onClick={handleSubmitDeleteTodo}/>
+    return <Tr key={task.id}>
+    <Th className="p-4">{task.id}</Th>
+    <Td className="p-4">{task.text}</Td>
+    <Td className="flex gap-5 p-4">
+        <div style={{display: 'flex', flexDirection: 'row'}}>
+            <FiEdit size={20} className="text-blue-500 m-2" cursor="pointer" onClick={() => setOpenModalEdit(true)}/>
+            <FiTrash2 size={20} className="text-red-500 m-2" cursor="pointer" onClick={handleSubmitDeleteTodo}/>
+        </div>
 
         <Modal modalOpen={openModalEdit} setModalOpen={setOpenModalEdit} >
         <form onSubmit={handleSubmitEditTodo}>
@@ -55,8 +58,8 @@ const Task: React.FC<TaskProps> = ({task}) => {
         
         </form>
         </Modal>
-    </td>
-</tr>
+    </Td>
+</Tr>
 }
 
 export default Task;

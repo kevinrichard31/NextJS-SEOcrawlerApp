@@ -12,6 +12,10 @@ const AddTask = () => {
     const handleSubmitNewTodo:FormEventHandler<HTMLFormElement> = 
     async (e) => {
         e.preventDefault();
+        if(newTaskvalue.length < 1){
+            console.log("empty")
+            return
+        }
         await addTodo({
             id: uuidv4(),
             text: newTaskvalue

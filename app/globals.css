@@ -5,6 +5,5 @@
 .containerHome {
     display: flex;
     flex-direction: column;
-    width: 800px;
     align-items: center;
 }
